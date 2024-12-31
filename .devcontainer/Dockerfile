@@ -1,5 +1,6 @@
 # Node.js 기반 Dev Container 이미지 사용
-FROM mcr.microsoft.com/devcontainers/javascript-node
+ FROM node:20-alpine
+
 
 
 # 추가 도구 설치 (필요에 따라 수정 가능)
