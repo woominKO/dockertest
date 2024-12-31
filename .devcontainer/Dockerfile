@@ -1,7 +1,5 @@
 # Node.js 기반 Dev Container 이미지 사용
- FROM node:20-alpine
-
-
+FROM node:16
 
 # 추가 도구 설치 (필요에 따라 수정 가능)
 RUN apt-get update && apt-get install -y git curl bash
@@ -11,3 +9,6 @@ WORKDIR /workspace
 
 COPY package.json ./
 RUN npm install
+
+# 기본 명령어 설정
+CMD ["npm", "start"]
